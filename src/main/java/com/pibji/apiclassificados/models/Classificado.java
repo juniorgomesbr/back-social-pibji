@@ -1,7 +1,9 @@
 package com.pibji.apiclassificados.models;
 
 import java.io.Serializable;
+import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,7 +32,7 @@ public class Classificado implements Serializable{
 	private Boolean status;
 	
 	@CreationTimestamp
-	private Calendar data_cadastro;
+	private Date data_cadastro;
 	
 	public long getId() {
 		return id;
@@ -80,10 +82,10 @@ public class Classificado implements Serializable{
 	public void setVoluntario(Boolean voluntario) {
 		this.voluntario = voluntario;
 	}
-	public Calendar getData_cadastro() {
+	public Date getData_cadastro() {
 		return data_cadastro;
 	}
-	public void setData_cadastro(Calendar data_cadastro) {
+	public void setData_cadastro(Date data_cadastro) {
 		this.data_cadastro = data_cadastro;
 	}
 	
